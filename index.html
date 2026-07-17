@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pertamaku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Website Saya</h1>
+        <p>Selamat datang!</p>
+    </header>
+
+    <!-- NAVIGASI (Menu) -->
+    <nav>
+        <a href="#">Beranda</a>
+        <a href="#">Tentang Saya</a>
+        <a href="#">Galeri</a>
+        <a href="#">Kontak</a>
+    </nav>
+
+    <!-- ISI UTAMA -->
+    <main>
+<h2>Hubungi Saya</h2>
+<form id="contactForm">
+    <label for="nama">Nama:</label><br>
+    <input type="text" id="nama" placeholder="Masukkan nama kamu" required><br><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" placeholder="contoh@email.com" required><br><br>
+    
+    <label for="pesan">Pesan:</label><br>
+    <textarea id="pesan" rows="5" placeholder="Tulis pesan kamu di sini..." required></textarea><br><br>
+    
+    <button type="submit">Kirim Pesan</button>
+</form>
+
+        <h2>Halo, saya Muhammad Ali Tabrillah</h2>
+        <p>Ini adalah website pertama saya. Saya sedang belajar membuat website dari nol.</p>
+        
+        <img src="gambar_saya.jpeg" alt="Foto saya" width="400">
+        
+        <h2>Apa yang saya suka</h2>
+        <ul>
+            <li>Belajar hal baru</li>
+            <li>Membuat website</li>
+            <li>Bermain game</li>
+        </ul>
+
+        <button onclick="tombolDiklik()">Klik untuk salam</button>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 - Dibuat oleh Muhammad Ali Tabrillah</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

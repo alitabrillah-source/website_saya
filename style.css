@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Navigasi Modern */
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Memberi jarak antar link */
+nav a + a {
+    margin-left: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #008cba;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005f73;
+}
+/* Biar lebih modern */
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+h2 {
+    color: #2e8b57;
+    border-bottom: 3px solid #4CAF50;
+    padding-bottom: 10px;
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px hsla(203, 94%, 37%, 0.675);
+}
