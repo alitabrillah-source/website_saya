@@ -1,78 +1,159 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
-    background-color: #f4f4f4;
+    padding: 0;
+    box-shadow: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.5;
+    color: hsl(199, 88%, 29%);
+    background: linear-gradient(135deg, rgb(233, 235, 235) 0%, #e0e3e8 100%);
+    min-height: 100vh;
 }
 
 header {
-    background-color: #2e8b57;
-    color: white;
+    background: linear-gradient(135deg, #06a053, #033a1b);
+    color: rgb(68, 203, 151);
     text-align: center;
-    padding: 30px;
+    padding: 60px 20px;
+    box-shadow: 0 4px 15px rgba(42, 182, 7, 0.589);
 }
 
-/* Navigasi Modern */
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
 nav {
-    background-color: #333;
+    background-color: #222;
     padding: 15px 0;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 nav a {
     color: white;
-    margin: 0 20px;
+    margin: 0 18px;
     text-decoration: none;
-    font-size: 17px;
-    padding: 8px 16px;
-    border-radius: 5px;
-    transition: all 0.3s;
+    font-weight: 500;
+    padding: 10px 18px;
+    border-radius: 25px;
+    transition: 0.3s;
 }
 
 nav a:hover {
     background-color: #4CAF50;
-    color: white;
-    transform: scale(1.05);
+    transform: translateY(-3px);
 }
 
-/* Memberi jarak antar link */
-nav a + a {
-    margin-left: 10px;
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-}
-
-button {
-    padding: 12px 25px;
-    font-size: 16px;
-    background-color: #008cba;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #005f73;
-}
-/* Biar lebih modern */
-h1 {
-    font-size: 2.5em;
-    margin: 0;
+section {
+    margin-bottom: 50px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
 }
 
 h2 {
     color: #2e8b57;
-    border-bottom: 3px solid #4CAF50;
-    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2em;
 }
 
 img {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px hsla(203, 94%, 37%, 0.675);
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    margin: 20px 0;
+}
+
+button {
+    background: linear-gradient(135deg, #008cba, #005f73);
+    color: white;
+    padding: 14px 32px;
+    font-size: 17px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,140,186,0.4);
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,140,186,0.5);
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header h1 { font-size: 2.2em; }
+    nav a { margin: 8px; padding: 8px 14px; }
+}
+/* Animasi */
+header {
+    animation: fadeInDown 1s ease-out;
+}
+
+main section {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInDown 0.8s forwards;
+    animation-delay: 0.2s;
+}
+
+img {
+    transition: transform 10 s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+button {
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+/* Keyframes Animasi */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
