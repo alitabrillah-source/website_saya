@@ -16,28 +16,26 @@
 
     <!-- NAVIGASI (Menu) -->
     <nav>
-        <a href="#">Beranda</a>
-        <a href="#">Tentang Saya</a>
-        <a href="#">Galeri</a>
-        <a href="#">Kontak</a>
-    </nav>
+    <a href="index.html">Beranda</a>
+    <a href="about.html">Tentang Saya</a>
+    <a href="galeri.html"></a>Galeri</a>
+    <a href="#">Kontak</a>
+</nav>
 
     <!-- ISI UTAMA -->
     <main>
-<h2>Formulir berkas</h2>
-<form id="contactForm">
-    <label for="NIK">NIK:</label><br>
-    <input type="number" id="NIK" placeholder="Masukkan NIK" required><br><br>
+<h2>Hubungi Saya</h2>
+<form action="https://formspree.io/f/xaqrervo" method="POST">
+    <label for="nama">Nama Lengkap:</label><br>
+    <input type="text" name="nama" id="nama" placeholder="Masukkan nama kamu" required><br><br>
     
-    <label for="nama">Nama:</label><br>
-    <input type="text" id="nama" placeholder="Masukkan Nama" required><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" name="email" id="email" placeholder="email@contoh.com" required><br><br>
     
-    <label for="alamat">Alamat:</label><br>
-    <textarea id="alamat" rows="4" placeholder="Masukkan Alamat" required></textarea><br><br>
-    <label for="namaorangtua">Nama Orang Tua</label><br>
-    <input type="text" id="namaorangtua" placeholder="Nama Orang Tua" required><br><br>
+    <label for="pesan">Pesan:</label><br>
+    <textarea name="pesan" id="pesan" rows="6" placeholder="Tulis pesan atau pertanyaan kamu di sini..." required></textarea><br><br>
     
-    <button type="submit">Kirim</button>
+    <button type="submit">Kirim Pesan</button>
 </form>
 
         <h2>Halo, saya Muhammad Ali Tabrillah</h2>
